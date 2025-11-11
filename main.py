@@ -22,6 +22,8 @@ def fetch_and_display_users():
                 print(f"  Email: {user['email']}")
                 print(f"  City: {user['address']['city']}")
                 print("------------------------")
+
+            # BONUS: Print only users whose city starts with 'S'
             
             print("\n=== USERS FROM CITIES STARTING WITH 'S' ===\n")
             s_city_users = [user for user in users if user['address']['city'].startswith('S')]
