@@ -1,64 +1,75 @@
-Python Intern Task - User API Data Fetcher
-Description
-This Python script fetches user data from the JSONPlaceholder API and displays it in a readable format. It demonstrates working with GET APIs, JSON data handling, loops, and error handling.
+# Python Intern Task - User Data Fetcher
 
-Requirements
-Python 3.6 or higher
+A Python script that fetches user data from the JSONPlaceholder API and displays it in a formatted output.
 
-requests library
+## Description
 
-Installation
-Step 1: Clone the Repository
+This project demonstrates working with REST APIs, JSON data handling, loops, and error handling in Python. It retrieves user information from a public API and displays specific details including name, username, email, and city.
 
-git clone <your-repository-url>
-cd <repository-name>
-Step 2: Install Required Package
+## Features
 
-pip install requests
-How to Run
-Run the script using Python:
+- Fetches data from JSONPlaceholder API using GET requests
+- Displays all users with formatted output
+- Filters users from cities starting with the letter 'S'
+- Includes error handling for API failures and connection issues
+
+## Requirements
+
+- Python 3.6+
+- requests library
+
+## Installation
+
+1. Clone the repository:
+git clone https://github.com/YOUR-USERNAME/python-intern-task.git
+cd python-intern-task
 
 
+2. Install dependencies:
+ pip install requests
+
+
+## Usage
+
+Run the script:
 python main.py
-What the Script Does
-Fetches Data: Makes a GET request to https://jsonplaceholder.typicode.com/users
 
-Displays All Users: Shows Name, Username, Email, and City for each user
 
-Bonus Feature: Filters and displays only users from cities starting with 'S'
 
-Error Handling: Handles API errors and connection issues gracefully
-
-Expected Output
-text
+## Expected Output
 === ALL USERS ===
 
 User 1:
-  Name: Leanne Graham
-  Username: Bret
-  Email: Sincere@april.biz
-  City: Gwenborough
-------------------------
+Name: Leanne Graham
+Username: Bret
+Email: Sincere@april.biz
+City: Gwenborough
 ...
 
-=== BONUS: USERS FROM CITIES STARTING WITH 'S' ===
+=== USERS FROM CITIES STARTING WITH 'S' ===
 
 User 1:
-  Name: Patricia Lebsack
-  Username: Karianne
-  Email: Julianne.OConner@kory.org
-  City: South Elvis
-------------------------
-Features Implemented
-✅ GET API call using requests library
-✅ JSON data parsing
-✅ Loop through users and display formatted data
-✅ Extract nested data (address.city)
-✅ Bonus: Filter users by city starting with 'S'
-✅ Bonus: Error handling for API failures
+Name: Patricia Lebsack
+Username: Karianne
+Email: Julianne.OConner@kory.org
+City: South Elvis
 
-Author
+
+
+
+## API Reference
+
+This project uses the JSONPlaceholder API:
+- Endpoint: `https://jsonplaceholder.typicode.com/users`
+- Method: GET
+- Authentication: None required
+
+## Author
+
 Naman Srivastava
 
-License
+## License
+
 This project is created for internship assessment purposes.
+
+
